@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "yii2\\swaggergenerator\\": "src/"
+            "centangle\\swaggergenerator\\": "src/"
         }
     }
 }
