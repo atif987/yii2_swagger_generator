@@ -352,7 +352,7 @@ class DocsGenerator
      * Get Swagger type from database column
      * @param \yii\db\ColumnSchema $column
      * @return string
-     */
+    */
     private function getSwaggerType($column)
     {
         $typeMap = [
@@ -388,13 +388,12 @@ class DocsGenerator
     private function getColumnDescription($column)
     {
         $description = ucwords(str_replace('_', ' ', $column->name));
-        
-        if ($column->type === 'datetime' || $column->type === 'timestamp') {
+        if ($column->type === 'datetime' || $column->type === 'timestamp') 
+        {
             $description .= " (Format: YYYY-MM-DD HH:mm:ss)";
         } elseif ($column->type === 'date') {
             $description .= " (Format: YYYY-MM-DD)";
         }
-
         return $description;
     }
 
