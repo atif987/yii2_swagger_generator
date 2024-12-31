@@ -1,6 +1,6 @@
 <?php
 
-namespace generator\swaggergenerator;
+namespace gen\swaggergenerator;
 
 use Yii;
 use ReflectionClass;
